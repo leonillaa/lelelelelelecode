@@ -1,0 +1,649 @@
+import React, { useState } from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  ScrollView,
+  TouchableOpacity,
+  Dimensions,
+} from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
+
+const windowWidth = Dimensions.get("window").width;
+const windowHeight = Dimensions.get("window").height;
+
+export default function IntermediateScreen() {
+  const [modalVisible1, setModalVisible1] = useState("none");
+  const [modalVisible2, setModalVisible2] = useState("none");
+  const [modalVisible3, setModalVisible3] = useState("none");
+  const [modalVisible4, setModalVisible4] = useState("none");
+  const [modalVisible5, setModalVisible5] = useState("none");
+  const [modalVisible6, setModalVisible6] = useState("none");
+  const [modalVisible7, setModalVisible7] = useState("none");
+  const [modalVisible8, setModalVisible8] = useState("none");
+  const [modalVisible9, setModalVisible9] = useState("none");
+  const [modalVisible10, setModalVisible10] = useState("none");
+  const [modalVisible11, setModalVisible11] = useState("none");
+  const [modalVisible12, setModalVisible12] = useState("none");
+  const [modalVisible13, setModalVisible13] = useState("none");
+  const [modalVisible14, setModalVisible14] = useState("none");
+  const [modalVisible15, setModalVisible15] = useState("none");
+
+
+  return (
+  
+    <LinearGradient
+      
+      colors={["rgb(2, 2, 2)", "rgb(168, 38, 228)"]}
+      style={{ flex: 1 }}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 1, y: 1 }}
+    >
+        <ScrollView>
+      {/* 1 Modal */}
+      <View
+        style={{
+          display: modalVisible1,
+          position: "absolute",
+          width: windowWidth,
+          height: windowHeight,
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          zIndex: 2,
+        }}
+      >
+        <TouchableOpacity onPress={() => setModalVisible1("none")} style={styles.modalBox}>
+          <ScrollView>
+            <Text style={styles.modalTitle}>вправи</Text>
+            <Text>1. Розминка — 10 хв</Text>
+            <Text>2. Присідання — 3×15</Text>
+            <Text>3. Віджимання — 3×20</Text>
+            <Text>4. Планка — 3×1хв</Text>
+            <Text>5. Заминка — 5 хв</Text>
+            <TouchableOpacity style={styles.closeButton} onPress={() => setModalVisible1("none")}>
+              <Text style={styles.closeButtonText}>Закрити</Text>
+            </TouchableOpacity>
+          </ScrollView>
+        </TouchableOpacity>
+      </View>
+
+      {/* Button 1 */}
+      <View style={[styles.rectangle, { top: 215 }]}>
+        <TouchableOpacity style={styles.startButton} onPress={() => setModalVisible1("flex")}>
+          <Text style={styles.startText}>START </Text>
+        </TouchableOpacity>
+      </View>
+      <Text style={styles.exerciseLabel1}>1</Text>
+      <Text style={styles.exerciseLabel1_2}> 14 Exercises</Text>
+
+    
+    
+    
+    
+    
+      {/* 2 Modal */}
+      <View
+        style={{
+          display: modalVisible2,
+          position: "absolute",
+          width: windowWidth,
+          height: windowHeight,
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          zIndex: 2,
+        }}
+      >
+        <TouchableOpacity onPress={() => setModalVisible2("none")} style={styles.modalBox}>
+          <ScrollView>
+            <Text style={styles.modalTitle}>вправи</Text>
+            <Text>1. Біг на місці — 5 хв</Text>
+            <Text>2. Берпі — 3×15</Text>
+            <Text>3. Стрибки — 3×30</Text>
+            <Text>4. Планка з руками — 3×1хв</Text>
+            <Text>5. Розтяжка — 10 хв</Text>
+            <TouchableOpacity style={styles.closeButton} onPress={() => setModalVisible2("none")}>
+              <Text style={styles.closeButtonText}>Закрити</Text>
+            </TouchableOpacity>
+          </ScrollView>
+        </TouchableOpacity>
+      </View>
+
+      {/* Button 2 */}
+      <View style={[styles.rectangle, styles.whiteRectangle, { top: 295 }]}>
+        <TouchableOpacity style={styles.startButton} onPress={() => setModalVisible2("flex")}>
+          <Text style={styles.startText}>START </Text>
+        </TouchableOpacity>
+      </View>
+      <Text style={styles.exerciseLabel2}>2</Text>
+      <Text style={styles.exerciseLabel2_2}> 14 Exercises</Text>
+
+    
+    
+    
+    
+    
+    
+      {/* 3 Modal */}
+      <View
+        style={{
+          display: modalVisible3,
+          position: "absolute",
+          width: windowWidth,
+          height: windowHeight,
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          zIndex: 2,
+        }}
+      >
+        <TouchableOpacity onPress={() => setModalVisible3("none")} style={styles.modalBox}>
+          <ScrollView>
+            <Text style={styles.modalTitle}>вправи</Text>
+            <Text>1. Біг на місці — 5 хв</Text>
+            <Text>2. Берпі — 3×15</Text>
+            <Text>3. Стрибки — 3×30</Text>
+            <Text>4. Планка з руками — 3×1хв</Text>
+            <Text>5. Розтяжка — 10 хв</Text>
+            <TouchableOpacity style={styles.closeButton} onPress={() => setModalVisible3("none")}>
+              <Text style={styles.closeButtonText}>Закрити</Text>
+            </TouchableOpacity>
+          </ScrollView>
+        </TouchableOpacity>
+      </View>
+
+      {/* Button 3 */}
+      <View style={[styles.rectangle, styles.whiteRectangle3, { top: 375 }]}>
+        <TouchableOpacity style={styles.startButton} onPress={() => setModalVisible3("flex")}>
+          <Text style={styles.startText}>START </Text>
+        </TouchableOpacity>
+      </View>
+      <Text style={styles.exerciseLabel3}>3</Text>
+      <Text style={styles.exerciseLabel3_2}> 16 Exercises</Text>
+   
+
+
+      {/* 4 Modal */}
+      <View
+        style={{
+          display: modalVisible4,
+          position: "absolute",
+          width: windowWidth,
+          height: windowHeight,
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          zIndex: 2,
+        }}
+      >
+        <TouchableOpacity onPress={() => setModalVisible4("none")} style={styles.modalBox}>
+          <ScrollView>
+            <Text style={styles.modalTitle}>вправи</Text>
+            <Text>1. Біг на місці — 5 хв</Text>
+            <Text>2. Берпі — 3×15</Text>
+            <Text>3. Стрибки — 3×30</Text>
+            <Text>4. Планка з руками — 3×1хв</Text>
+            <Text>5. Розтяжка — 10 хв</Text>
+            <TouchableOpacity style={styles.closeButton} onPress={() => setModalVisible4("none")}>
+              <Text style={styles.closeButtonText}>Закрити</Text>
+            </TouchableOpacity>
+          </ScrollView>
+        </TouchableOpacity>
+      </View>
+
+      {/* Button 4 */}
+      <View style={[styles.rectangle, styles.whiteRectangle4, { top: 455 }]}>
+        
+      </View>
+      <Text style={styles.exerciseLabel4}>4 Rest</Text>
+  
+   
+
+
+
+
+
+
+       {/* 5 Modal */}
+      <View
+        style={{
+          display: modalVisible5,
+          position: "absolute",
+          width: windowWidth,
+          height: windowHeight,
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          zIndex: 2,
+        }}
+      >
+        <TouchableOpacity onPress={() => setModalVisible5("none")} style={styles.modalBox}>
+          <ScrollView>
+            <Text style={styles.modalTitle}>вправи</Text>
+            <Text>1. Біг на місці — 5 хв</Text>
+            <Text>2. Берпі — 3×15</Text>
+            <Text>3. Стрибки — 3×30</Text>
+            <Text>4. Планка з руками — 3×1хв</Text>
+            <Text>5. Розтяжка — 10 хв</Text>
+            <TouchableOpacity style={styles.closeButton} onPress={() => setModalVisible5("none")}>
+              <Text style={styles.closeButtonText}>Закрити</Text>
+            </TouchableOpacity>
+          </ScrollView>
+        </TouchableOpacity>
+      </View>
+
+      {/* Button 5 */}
+      <View style={[styles.rectangle, styles.whiteRectangle, { top: 535 }]}>
+        <TouchableOpacity style={styles.startButton} onPress={() => setModalVisible5("flex")}>
+          <Text style={styles.startText}>START </Text>
+        </TouchableOpacity>
+      </View>
+      <Text style={styles.exerciseLabel5}>5 15 Exercises</Text>
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////ДЄСЯТКА ЙООООООУ МОДАЛОК ДЛЯ ІНТЕРМІДІАТЕ//////////
+
+
+
+
+  {/* 6 Modal */}
+      <View
+        style={{
+          display: modalVisible6,
+          position: "absolute",
+          width: windowWidth,
+          height: windowHeight,
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          zIndex: 2,
+        }}
+      >
+        <TouchableOpacity onPress={() => setModalVisible6("none")} style={styles.modalBox}>
+          <ScrollView>
+            <Text style={styles.modalTitle}>вправи</Text>
+            <Text>1. Розминка — 10 хв</Text>
+            <Text>2. Присідання — 3×15</Text>
+            <Text>3. Віджимання — 3×20</Text>
+            <Text>4. Планка — 3×1хв</Text>
+            <Text>5. Заминка — 5 хв</Text>
+            <TouchableOpacity style={styles.closeButton} onPress={() => setModalVisible6("none")}>
+              <Text style={styles.closeButtonText}>Закрити</Text>
+            </TouchableOpacity>
+          </ScrollView>
+        </TouchableOpacity>
+      </View>
+
+      {/* Button 6 */}
+      <View style={[styles.rectangle, { top: 615 }]}>   
+        <TouchableOpacity style={styles.startButton} onPress={() => setModalVisible6("flex")}>
+          <Text style={styles.startText}>START </Text>
+        </TouchableOpacity>
+      </View>
+      <Text style={styles.exerciseLabel6}>6 20 Exercises</Text>
+
+    
+    
+    
+    
+    
+      {/* 7 Modal */}
+      <View
+        style={{
+          display: modalVisible7,
+          position: "absolute",
+          width: windowWidth,
+          height: windowHeight,
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          zIndex: 2,
+        }}
+      >
+        <TouchableOpacity onPress={() => setModalVisible7("none")} style={styles.modalBox}>
+          <ScrollView>
+            <Text style={styles.modalTitle}>вправи</Text>
+            <Text>1. Біг на місці — 5 хв</Text>
+            <Text>2. Берпі — 3×15</Text>
+            <Text>3. Стрибки — 3×30</Text>
+            <Text>4. Планка з руками — 3×1хв</Text>
+            <Text>5. Розтяжка — 10 хв</Text>
+            <TouchableOpacity style={styles.closeButton} onPress={() => setModalVisible7("none")}>
+              <Text style={styles.closeButtonText}>Закрити</Text>
+            </TouchableOpacity>
+          </ScrollView>
+        </TouchableOpacity>
+      </View>
+
+      {/* Button 7 */}
+      <View style={[styles.rectangle, styles.whiteRectangle, { top: 695 }]}>
+        <TouchableOpacity style={styles.startButton} onPress={() => setModalVisible7("flex")}>
+          <Text style={styles.startText}>START </Text>
+        </TouchableOpacity>
+      </View>
+      <Text style={styles.exerciseLabel7}>7 20 Exercises</Text>
+
+    
+    
+    
+    
+    
+    
+      {/* 8 Modal */}
+      <View
+        style={{
+          display: modalVisible8,
+          position: "absolute",
+          width: windowWidth,
+          height: windowHeight,
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          zIndex: 2,
+        }}
+      >
+        <TouchableOpacity onPress={() => setModalVisible8("none")} style={styles.modalBox}>
+          <ScrollView>
+            <Text style={styles.modalTitle}>вправи</Text>
+            <Text>1. Біг на місці — 5 хв</Text>
+            <Text>2. Берпі — 3×15</Text>
+            <Text>3. Стрибки — 3×30</Text>
+            <Text>4. Планка з руками — 3×1хв</Text>
+            <Text>5. Розтяжка — 10 хв</Text>
+            <TouchableOpacity style={styles.closeButton} onPress={() => setModalVisible8("none")}>
+              <Text style={styles.closeButtonText}>Закрити</Text>
+            </TouchableOpacity>
+          </ScrollView>
+        </TouchableOpacity>
+      </View>
+
+      {/* Button 8 */}
+      <View style={[styles.rectangle, styles.whiteRectangle3, { top: 775 }]}>
+        <TouchableOpacity style={styles.startButton} onPress={() => setModalVisible8("flex")}>
+          <Text style={styles.startText}>START </Text>
+        </TouchableOpacity>
+      </View>
+      <Text style={styles.exerciseLabel8}>8 22 Exercises</Text>
+   
+
+
+      {/* 9 Modal */}
+      <View
+        style={{
+          display: modalVisible9,
+          position: "absolute",
+          width: windowWidth,
+          height: windowHeight,
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          zIndex: 2,
+        }}
+      >
+        <TouchableOpacity onPress={() => setModalVisible9("none")} style={styles.modalBox}>
+          <ScrollView>
+            <Text style={styles.modalTitle}>вправи</Text>
+            <Text>1. Біг на місці — 5 хв</Text>
+            <Text>2. Берпі — 3×15</Text>
+            <Text>3. Стрибки — 3×30</Text>
+            <Text>4. Планка з руками — 3×1хв</Text>
+            <Text>5. Розтяжка — 10 хв</Text>
+            <TouchableOpacity style={styles.closeButton} onPress={() => setModalVisible9("none")}>
+              <Text style={styles.closeButtonText}>Закрити</Text>
+            </TouchableOpacity>
+          </ScrollView>
+        </TouchableOpacity>
+      </View>
+
+      {/* Button 9 */}
+      <View style={[styles.rectangle, styles.whiteRectangle4, { top: 855 }]}>
+        
+      </View>
+      <Text style={styles.exerciseLabel9}>9 Rest</Text>
+  
+   
+
+
+
+
+
+
+       {/* 10 Modal */}
+      <View
+        style={{
+          display: modalVisible10,
+          position: "absolute",
+          width: windowWidth,
+          height: windowHeight,
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          zIndex: 2,
+        }}
+      >
+        <TouchableOpacity onPress={() => setModalVisible10("none")} style={styles.modalBox}>
+          <ScrollView>
+            <Text style={styles.modalTitle}>вправи</Text>
+            <Text>1. Біг на місці — 5 хв</Text>
+            <Text>2. Берпі — 3×15</Text>
+            <Text>3. Стрибки — 3×30</Text>
+            <Text>4. Планка з руками — 3×1хв</Text>
+            <Text>5. Розтяжка — 10 хв</Text>
+            <TouchableOpacity style={styles.closeButton} onPress={() => setModalVisible10("none")}>
+              <Text style={styles.closeButtonText}>Закрити</Text>
+            </TouchableOpacity>
+          </ScrollView>
+        </TouchableOpacity>
+      </View>
+
+      {/* Button 10 */}
+      <View style={[styles.rectangle, styles.whiteRectangle, { top: 935 }]}>
+        <TouchableOpacity style={styles.startButton} onPress={() => setModalVisible10("flex")}>
+          <Text style={styles.startText}>START </Text>
+        </TouchableOpacity>
+      </View>
+      <Text style={styles.exerciseLabel10}>10 22 Exercises</Text>
+</ScrollView>
+    </LinearGradient>
+
+  );
+}
+
+const styles = StyleSheet.create({
+  modalBox: {
+    width: windowWidth,
+    height: windowHeight,
+    backgroundColor: "white",
+  },
+  modalTitle: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 20,
+  },
+  closeButton: {
+    backgroundColor: "#000",
+    padding: 10,
+    borderRadius: 10,
+    marginTop: 20,
+  },
+  closeButtonText: {
+    color: "white",
+    textAlign: "center",
+  },
+  rectangle: {
+    position: "absolute",
+    width: 382,
+    height: 72,
+    left: 12,
+    backgroundColor: "rgb(153, 35, 208)", // фіолетове
+    borderRadius: 10,
+    justifyContent: "center",
+    alignItems: "flex-end",
+    paddingRight: 20,
+  },
+  whiteRectangle: {
+    backgroundColor: "white", //для другоі модалки
+  },
+  whiteRectangle3: {
+    backgroundColor: "white", //для третьої модалки білий 
+  },
+   whiteRectangle3: {
+    backgroundColor: "white", //для третьої модалки білий 
+  },
+  whiteRectangle4: {
+    backgroundColor: "white", //для четвертої модалки білий
+  },
+  startButton: {
+    width: 109,
+    height: 42,
+    backgroundColor: "rgb(5, 6, 31)",
+    borderRadius: 15,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  startText: {
+    color: "white",
+    fontSize: 14,
+    fontFamily: "sans-serif",
+    lineHeight: 25,
+    textAlign: "center",
+  },
+  exerciseLabel1: {
+    position: "absolute",
+    width: 64,
+    height: 28,
+    left: 20,
+    top: 233,
+    color: "white",
+    fontFamily: "Itim",
+    fontSize: 12,
+    fontWeight: "400",
+    lineHeight: 14,
+    textAlign: "left",
+  },
+  exerciseLabel2: {
+    position: "absolute",
+    width: 64,
+    height: 28,
+    left: 21,
+    top: 318,
+    color: "rgb(113, 113, 113)",
+    fontFamily: "Itim",
+    fontSize: 12,
+    fontWeight: "400",
+    lineHeight: 14,
+    textAlign: "left",
+  },
+  exerciseLabel3: {
+    position: "absolute",
+    width: 64,
+    height: 28,
+    left: 21,
+    top: 398,
+    color: "rgb(113, 113, 113)",
+    fontFamily: "Itim",
+    fontSize: 12,
+    fontWeight: "400",
+    lineHeight: 14,
+    textAlign: "left",
+  },
+
+    exerciseLabel3: {
+    position: "absolute",
+    width: 64,
+    height: 28,
+    left: 21,
+    top: 398,
+    color: "rgb(113, 113, 113)",
+    fontFamily: "Itim",
+    fontSize: 12,
+    fontWeight: "400",
+    lineHeight: 14,
+    textAlign: "left",
+  },
+  exerciseLabel4: {
+    position: "absolute",
+    width: 64,
+    height: 28,
+    left: 21,
+    top: 477,
+    color: "rgb(113, 113, 113)",
+    fontFamily: "Itim",
+    fontSize: 12,
+    fontWeight: "400",
+    lineHeight: 14,
+    textAlign: "left",
+  },
+
+    exerciseLabel5: {
+    position: "absolute",
+    width: 64,
+    height: 28,
+    left: 21,
+    top: 556, ////КОЖЕН РАЗ + 79////
+    color: "rgb(113, 113, 113)",
+    fontFamily: "Itim",
+    fontSize: 12,
+    fontWeight: "400",
+    lineHeight: 14,
+    textAlign: "left",
+  },
+    exerciseLabel6: {
+    position: "absolute",
+    width: 64,
+    height: 28,
+    left: 21,
+    top: 635, ////КОЖЕН РАЗ + 79////
+    color: "rgb(255, 255, 255)",
+    fontFamily: "Itim",
+    fontSize: 12,
+    fontWeight: "400",
+    lineHeight: 14,
+    textAlign: "left",
+  },
+
+     exerciseLabel7: {
+    position: "absolute",
+    width: 64,
+    height: 28,
+    left: 21,
+    top: 714, ////КОЖЕН РАЗ + 79////
+    color: "rgb(113, 113, 113)",
+    fontFamily: "Itim",
+    fontSize: 12,
+    fontWeight: "400",
+    lineHeight: 14,
+    textAlign: "left",
+  },
+     exerciseLabel8: {
+    position: "absolute",
+    width: 64,
+    height: 28,
+    left: 21,
+    top: 793, ////КОЖЕН РАЗ + 79////
+    color: "rgb(113, 113, 113)",
+    fontFamily: "Itim",
+    fontSize: 12,
+    fontWeight: "400",
+    lineHeight: 14,
+    textAlign: "left",
+  },
+     exerciseLabel9: {
+    position: "absolute",
+    width: 64,
+    height: 28,
+    left: 21,
+    top: 872, ////КОЖЕН РАЗ + 79////
+    color: "rgb(113, 113, 113)",
+    fontFamily: "Itim",
+    fontSize: 12,
+    fontWeight: "400",
+    lineHeight: 14,
+    textAlign: "left",
+  },
+      exerciseLabel10: {
+    position: "absolute",
+    width: 64,
+    height: 28,
+    left: 21,
+    top: 951, ////КОЖЕН РАЗ + 79////
+    color: "rgb(113, 113, 113)",
+    fontFamily: "Itim",
+    fontSize: 12,
+    fontWeight: "400",
+    lineHeight: 14,
+    textAlign: "left",
+  },
+});
